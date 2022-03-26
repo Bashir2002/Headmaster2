@@ -95,7 +95,8 @@ header button{
 }
 .div12{
     margin-left: 10%;
-padding-top: 0px;}
+    padding-top: 0px;
+}
 .div12 h2{
     font-size: 130%;
     margin-bottom: 10px;
@@ -184,8 +185,9 @@ padding-top: 0px;}
 .image{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    /* width: 0%; */
     margin: 50px auto;
+    padding-right: 50px;
 }
 .img1 img,.img3 img{
     width: 200px;
@@ -202,7 +204,7 @@ padding-top: 0px;}
     padding: 0;
     /* padding-inline: 0; */
     /* border: 1px solid black; */
-    width: 1000px;
+    max-width: 1000px;
     padding: 20px 50px 20px 50px ;
     background-image: url(images/pexels-juan-salamanca-61129.jpg);
     background-position: center;
@@ -253,9 +255,10 @@ padding-top: 0px;}
 }
 .product{
     font-size: 80%;
+    margin-bottom: 70px;
 }
 .footer{
-    padding: 70px 30px 70px 80px ;
+    padding: 70px 30px 0px 80px ;
     /* border: 1px solid black; */
     background-color: #F6F6F6;
 
@@ -267,4 +270,104 @@ padding-top: 0px;}
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.last{
+    text-align: center;
+    font-size: 70%;
+}
+.last a{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+@media only screen and (max-width: 750px) {
+    header .container{
+        max-width: 375px;
+        margin: 0 auto;
+        height: 500px;
+        padding: 10px;
+    }
+    header button{
+        /* padding: 0px 8px; */
+    }
+    .header-content{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .container{
+        max-width: 375px;
+        padding: 30px;
+    }
+    .container2{
+        max-width: 375px;
+    }
+    .div11{
+        float: none;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .div12{
+        margin-left: 0px;
+    }
+    .div12 h2{
+        text-align: center;
+        font-size: 100%;
+    }
+    .div2{
+
+    }
+    .div22{
+        float: none;
+        width: 100%;
+    }
+    .div21{
+        width: 100%;
+    }
+    .div21 h2{
+        font-size: 90%;
+        text-align: center;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+    }
+    .img1,.img3,.img2{
+        margin-top: 50px;
+    }
+    .div4{
+        width: 375px;
+        padding: 10px;
+    }
+    .div41{
+        width: ;
+        /* width: 90%; */
+    }
+    .content4{
+        padding-top: 50px;
+        font-size: 75%;
+        width: 95%;
+    }
+    .content4 input{
+        width: 100%;
+        height: 40px;
+    }
+    .footer{
+        padding: 70px 30px 0px 30px;
+    }
+    .product{
+        width: 50%;
+        /* margin: auto; */
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .last{
+        text-align: center;
+        font-size: 70%;
+    }
+    .last a{
+        text-decoration: underline;
+        color: blue;
+    }
+
 }
